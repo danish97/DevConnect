@@ -5,17 +5,13 @@ import cookieParser from "cookie-parser";
 import { connectdb } from "./configs/db.js";
 import userRoutes from "./routes/userRoutes.js";
 import postRoutes from "./routes/postRoutes.js";
-import path from "path";
-import fs from "fs";
 
 dotenv.config();
 const app = express();
 
 
-
-const cors = require("cors");
 app.use(cors({
-  origin: "https://dev-connect-two-blue.vercel.app/",
+  origin: process.env.CLIENT_URL,
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
