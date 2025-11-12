@@ -134,7 +134,7 @@ const Signup = () => {
 
           <p className="text-center mt-4 text-sm text-base-content/70">
             Already have an account?{" "}
-            <a href="/login" className="link link-primary">
+            <a onClick={navigate('/login')} className="link link-primary">
               Login here
             </a>
           </p>

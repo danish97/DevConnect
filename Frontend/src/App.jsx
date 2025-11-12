@@ -19,6 +19,7 @@ function App() {
         <Route path="/" element={isAuthenticated ?<Feed/> :<Home/> }/>
         <Route path="/login" element={isAuthenticated ?<Feed/> :<Login/> }/>
         <Route path="/register" element={isAuthenticated ?<Feed/> :<Signup/> }/>
+        <Route path="*" element={isAuthenticated ?<Feed/> :<Home/> }/>
         <Route
           path="/feed"
           element={
