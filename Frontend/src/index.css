@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import 'tailwindcss/utilities';
+@plugin "daisyui"{
+    themes: winter , forest --default;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
