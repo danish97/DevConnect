@@ -13,7 +13,6 @@
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
 - [Installation](#installation)
 
 ---
@@ -49,31 +48,6 @@ The project is structured to separate the frontend and backend, making it easy t
 | Database   | MongoDB, Mongoose           |
 | Authentication | JWT                     |
 | Deployment | Render                      |
-
----
-
-## Project Structure
-root/
-│
-├── frontend/ # React frontend
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ └── App.jsx
-│ ├── package.json
-│ └── README.md
-│
-├── backend/ # Node.js backend
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── app.js
-│ ├── server.js
-│ └── package.json
-│
-├── .gitignore
-└── README.md # Main project readme
 
 ---
 
